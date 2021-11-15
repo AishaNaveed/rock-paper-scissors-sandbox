@@ -38,6 +38,12 @@ const getRandomMove = () => {
   
   const updateDOM = (moveOne, moveTwo, outcome) => {
     // TODO Implement this method to update the DOM
+    const changeTitle = document.querySelector("h1");
+    changeTitle.textContent = "Update the heading";
+    const playerOne = document.getElementById("player-one-move__name");
+    const playerTwo = document.getElementById("player-two-move__name");
+    playerOne.textContent = moveOne;
+    playerTwo.textContent = moveTwo;
     // There are some images you can use in the images directory
   };
   
